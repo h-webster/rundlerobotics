@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 :root {
     --bg: #000000;
-    --header: #414141;
+    --header: #000000;
     --btn_text_high: #838383;
     --btn_text: white;
     --color2: #fff41c;
@@ -47,11 +49,11 @@ body {
     width: 11vw;
     border: 0;
     color: var(--btn_text);
-    transition: color 0.3 ease-in-out;
+    transition: background-color 0.3s;
     font-size: 20px;
 }
 .home-button:hover {
-    color: var(--btn_text_high);
+    background-color: #242424;
 }
 
 /* center info */
@@ -60,8 +62,12 @@ body {
     width: 100%;
     justify-content: center;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     height: 30vh;
+    background-image: url('bgbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .center-title {
@@ -85,4 +91,21 @@ body {
     width: 30vmin;
     height: auto;
     vertical-align: middle;
+}
+
+/* about us*/
+.about-us {
+    height: 40vh;
+    width: 100%;
+    background-color: #e0bb00;
+    padding: 20px;
+    padding-left: 5vw;
+    color: rgb(18, 18, 18);
+}
+
+.about-us-title {
+    margin: 0;
+    font-family: "Titan One", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
 }
