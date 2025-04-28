@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+#drop {
+    position: fixed;
+    bottom: 4px;
+    z-index: 1000;
+    background: none;
+}
+.info-btn {
+    background: none; 
+    border: 0;
+    background-image: none;
+}
+.info-btn img {
+    width: 20px;
+    height: auto;
+}
 
 :root {
     --bg: #000000;
@@ -6,8 +23,11 @@
     --btn_text_high: #838383;
     --btn_text: white;
     --color2: #fff41c;
+    --red: #ea3b3b;
 }
-
+html {
+    background-color: black;
+}
 header {
     width: 100%;
     height: 13vh;
@@ -29,7 +49,18 @@ body {
 }
 .home-text {
     display: inline;
-    color: var(--btn_text)
+    color: white;
+    font-family: "Cal Sans";
+    font-size: 25px;
+    margin-right: 30px;
+}
+.button-links {
+    display: flex;
+    gap: 5px;
+}
+.button-links a img {
+    height: auto;
+    width: 30px;
 }
 .home {
     display: flex;
@@ -63,7 +94,7 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    height: 30vh;
+    height: 40vh;
     background-image: url('bgbanner.png');
     background-size: cover;
     background-position: center;
@@ -95,17 +126,73 @@ body {
 
 /* about us*/
 .about-us {
-    height: 40vh;
+    height: 550px;
     width: 100%;
     background-color: #e0bb00;
     padding: 20px;
     padding-left: 5vw;
     color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    gap: 13%;
 }
 
 .about-us-title {
     margin: 0;
-    font-family: "Titan One", sans-serif;
-    font-size: 40px;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 6vmin;
     font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.about-us-desc {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 2.3vmin;
+}
+
+.about-us-img {
+    width: 40%;
+    height: auto;
+    border: 5px solid black;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: rgba(1,1,1,0.5);
+    width: 4px;
+}
+
+
+#carouselExample {
+    width: 100%;
+    margin: auto;
+}
+
+/* Meet the team */
+.meet-the-team {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+.meet-container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: rgb(240, 58, 58);
+}
+
+
+
+.carousel-item img {
+    margin: auto;
+}
+
+.cText {
+    text-align: center;
+}
+
+/*Contact us*/
+
+
+
+.stats-button {
+    color:aqua;
 }
