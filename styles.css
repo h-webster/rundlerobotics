@@ -36,6 +36,8 @@ header {
     gap: 10%;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 100;
 }
 body {
     margin: 0;
@@ -94,7 +96,7 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    height: 40vh;
+    height: 62vh;
     background-image: url('bgbanner.png');
     background-size: cover;
     background-position: center;
@@ -171,6 +173,7 @@ body {
 .meet-the-team {
     text-align: center;
     font-size: 50px;
+    font-family: "Cal Sans", sans-serif;
     color: black;
 }
 .meet-container {
@@ -190,9 +193,52 @@ body {
 }
 
 /*Contact us*/
+.contact {
+    background-color: #e0bb00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    color: black;
+}
 
-
+.contact-title {
+    margin-top: 5%;
+    font-family: "Cal Sans", sans-serif;
+}
+.contact-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form input {
+    margin: 0;
+    border: 0;
+}
+.subtitle {
+    margin-bottom: 3%;
+}
 
 .stats-button {
     color:aqua;
+}
+
+.submit-button {
+    background-color: #dbdbdb;
+    border: 0;
+    width: 9em;
+    height: 2.8em;
+    border: 2px solid #3a2222;
+    transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+    background-color: #93c99d;
+}
+.leftover {
+    margin: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: #e0bb00;
 }
